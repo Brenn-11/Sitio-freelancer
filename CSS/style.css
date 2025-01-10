@@ -143,7 +143,7 @@ font-size: 2rem;
 }
 
 .navegacion-principal a:hover{
-    background-color: var(--primario);
+    background-color: var(--blanco);
     color: var(--oscuro);
 }
 
@@ -192,7 +192,7 @@ font-size: 2rem;
 
 .servicio h3{
     color: var(--secundario);
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .servicio p{
@@ -203,7 +203,7 @@ font-size: 2rem;
 .servicio .iconos{
     height: 15rem;
     width: 15rem;
-    background-color: var(--primario);
+    background-color: var(--grisClaro);
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -212,7 +212,7 @@ font-size: 2rem;
 
 /** Contacto **/
 .formulario{
-    background-color: var(--gris);
+    background-color: var(--grisClaro);
     width: min(60rem, 100%); /*utilizar el menor valor*/
     margin: 0 auto;
     padding: 2rem;
@@ -230,7 +230,7 @@ font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: var(--primario);
+    color: var(--secundario);
 }
 
 @media (min-width: 768px) {
@@ -252,7 +252,7 @@ font-size: 2rem;
 }
 
 .campo label{
-    color: var(--blanco);
+    color: var(--secundario);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
