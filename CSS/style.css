@@ -1,10 +1,10 @@
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
-    --primario: #FFC107;
-    --secundario: #0097A7;
+    --primario: #ffa807;
+    --secundario: #fb9d3f;
     --gris: #757575;
-    --grisClaro: #dfe9f3
+    --naranjaClaro: #ffe6ba;
 }
 
 html{
@@ -13,10 +13,11 @@ html{
     scroll-snap-type: y mandatory;
 }
 
-.servicios, .navegacion-principal, .formulario{
+/*.servicios, .navegacion-principal, .formulario{
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
+*/
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -25,7 +26,7 @@ html{
 body{
     font-size: 16px; /*1rem = 10px*/
     font-family: "Krub", Helvetica, sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco));
+    background-image: linear-gradient(to top, var(--naranjaClaro) 0%, var(--blanco));
 }
 
 h1{
@@ -203,7 +204,7 @@ font-size: 2rem;
 .servicio .iconos{
     height: 15rem;
     width: 15rem;
-    background-color: var(--grisClaro);
+    background-color: var(--naranjaClaro);
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -212,7 +213,7 @@ font-size: 2rem;
 
 /** Contacto **/
 .formulario{
-    background-color: var(--grisClaro);
+    background-color: var(--naranjaClaro);
     width: min(60rem, 100%); /*utilizar el menor valor*/
     margin: 0 auto;
     padding: 2rem;
@@ -273,3 +274,81 @@ font-size: 2rem;
 .footer{
     text-align: center;
 }
+
+
+.contenedor-descripcion{
+    margin-top: 5rem;
+}
+
+.descripcion-sobremi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    padding: 0 5rem;
+}
+
+.descripcion-sobremi__imagen{
+    border-radius: 1.5rem;
+}
+
+.descripcion-sobremi__texto{
+    padding-right: 5rem;
+}
+
+@media (max-width: 780px) {
+    .descripcion-sobremi{
+        display: grid;
+        gap: 2rem;
+    }
+
+    .descripcion-sobremi__texto{
+        padding-right: 0;
+    }
+}
+
+.contenedor-proyectos{
+    margin-top: 5rem;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+
+.proyecto__imagen{
+    width: 90%;
+    border: 1px solid var(--secundario);
+    border-radius: 1.5rem;
+}
+
+.proyecto__descripcion{
+    padding: 1rem 5rem;
+}
+
+@media (max-width: 480px) {
+
+    .descripcion-sobremi{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        
+    }
+
+    .descripcion-sobremi__imagen{
+        width: 70%;
+    }
+
+    .descripcion-sobremi__texto{
+        padding-right: 0;
+    }
+
+    .proyectos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    
+}
+
